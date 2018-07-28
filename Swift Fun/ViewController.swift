@@ -3,7 +3,7 @@
 //  Swift Fun
 //
 //  Created by AiKiKen on 7/28/18.
-//  Copyright © 2018 Churl Nam. All rights reserved.
+//  Copyright © 2018 Churl Nam. All rights reserved...
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         if hitCounter == 10 {
         view.backgroundColor = UIColor.red
-        myLabel.text = "Hawkins is awesome!"
+        myLabel.text = "Hawkins is an iOS developer."
         }
         
         if hitCounter == 15 {
