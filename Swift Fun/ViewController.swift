@@ -4,7 +4,7 @@
 //
 //  Created by AiKiKen on 7/28/18.
 //  Copyright © 2018 Churl Nam. All rights reserved...
-//
+//  Hello, I like cheese.
 
 import UIKit
 
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         }
         
         if hitCounter == 15 {
-            view.backgroundColor = UIColor.yellow
+            view.backgroundColor = UIColor.gray
             myLabel.text = "Now code harder"
         }
         
