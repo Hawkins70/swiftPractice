@@ -9,22 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var hitCounter = 0
     
     @IBOutlet var myLabel: UILabel!
+    @IBOutlet var topTextField: UITextField!
+    @IBOutlet var bottomTextField: UITextField!
+    
+    @IBOutlet var additionSwitch: UISwitch!
+    
     @IBAction func buttonTapped(_ sender: Any) {
-        hitCounter += 1
         
-        if hitCounter == 10 {
-        view.backgroundColor = UIColor.red
-        myLabel.text = "Hawkins is an iOS developer."
+        let addition = additionSwitch.isOn
+        
+        if addition {
+            let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+            myLabel.text = "\(topTextField.text!) plus \(bottomTextField.text!) is \(sum)"
+        } else {
+            let sum = Double(topTextField.text!)! - Double(bottomTextField.text!)!
+            myLabel.text = "\(topTextField.text!) minus \(bottomTextField.text!) is \(sum)"
         }
-        
-        if hitCounter == 15 {
-            view.backgroundColor = UIColor.gray
-            myLabel.text = "Now code harder"
-        }
-        
+
+
     }
     
     
